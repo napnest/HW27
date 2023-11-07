@@ -1,5 +1,10 @@
 package exceptions;
 
-public class WrongLoginException {
-    //todo реализовать свое исключение
+public class WrongLoginException extends Throwable {
+    public WrongLoginException() {
+    }
+
+    public WrongLoginException(String message){
+        super(message);
+    }
 }
